@@ -89,7 +89,7 @@ end
       dog = DB[:conn].execute(sql,name,breed)
 
       if dog.empty?
-      create(name:name,breed:breed)
+      this = create(name:name,breed:breed)
       else
         dog = dog[0]
       dog_ = Dog.new(name:dog[1],breed:dog[2],id:dog[0])
