@@ -87,6 +87,7 @@ end
     SQL
 
       dog = DB[:conn].execute(sql,name,breed)[0]
+      binding.pry
       if !dog.empty?
       create(name,breed)
       else
