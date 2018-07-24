@@ -88,7 +88,7 @@ end
 
       dog = DB[:conn].execute(sql,name,breed)[0]
       if !dog
-        create(name,breed)
+      dog =  create(name,breed)
       else
         dog = new_from_db(dog)
 
