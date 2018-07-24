@@ -90,10 +90,10 @@ end
       if !dog
       create(name,breed)
       else
-        new_from_db(dog)
+        dog_= new_from_db(dog)
 
         end
-        dog
+        dog_ 
       end
 
 end
