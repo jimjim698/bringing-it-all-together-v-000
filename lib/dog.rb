@@ -92,7 +92,7 @@ end
       create(name:name,breed:breed)
       else
         dog = dog[0]
-      dog_ = Dog.new(name:dog[1],breed:[2],id:[0])
+      dog_ = Dog.new(name:dog[1],breed:dog[2],id:dog[0])
 
         end
         dog_
