@@ -81,18 +81,19 @@ def self.find_by_id(id)
   Dog.new(name:dog[1],breed:dog[2],id:dog[0])
 end
 
-def self.find_or_create_by(name:,breed:)
-  sql = <<-SQL
-  SELECT * FROM dogs WHERE name = ? AND breed = ?
-  SQL
+  def self.find_or_create_by(name:,breed:)
+    sql = <<-SQL
+    SELECT * FROM dogs WHERE name = ? AND breed = ?
+    SQL
 
-dog = DB[:conn].execute(sql,name,breed)
-binding.pry
-if !dog
-  create(name,breed)
-else
-new_from_db(dog)
+      dog = DB[:conn].execute(sql,name,breed)
+      binding.pry
+      if !dog
+        create(name,breed)
+      else
+        new_from_db(dog)
 
-end
+        end
+      end 
 
 end
