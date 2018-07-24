@@ -90,7 +90,7 @@ end
       if dog.empty?
       create(name,breed)
       else
-        dog = new_from_db(dog)
+        new_from_db(dog)
 
         end
         dog
