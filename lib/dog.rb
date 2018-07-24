@@ -95,6 +95,7 @@ end
         dog_.id = dog[0][0]
 
         end
+        binding.pry
         dog_
       end
 
