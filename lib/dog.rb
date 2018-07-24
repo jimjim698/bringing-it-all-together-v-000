@@ -92,6 +92,7 @@ end
       create(name:name,breed:breed)
       else
         dog_= new_from_db(dog[0]).save
+        dog_.id = dog[0][0]
 
         end
         dog_
