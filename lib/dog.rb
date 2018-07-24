@@ -93,7 +93,7 @@ end
         dog = new_from_db(dog)
 
         end
-        dog 
+        dog
       end
 
 end
