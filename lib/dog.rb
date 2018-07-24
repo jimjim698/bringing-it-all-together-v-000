@@ -91,7 +91,8 @@ end
       if dog.empty?
       create(name:name,breed:breed)
       else
-      dog_ = Dog.new(name:dog[0][1],breed:[0][2],id:[0][0])
+        dog = dog[0]
+      dog_ = Dog.new(name:dog[1],breed:[2],id:[0])
 
         end
         dog_
