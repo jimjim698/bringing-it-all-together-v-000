@@ -92,7 +92,7 @@ if !dog
   binding.pry
   create(name,breed)
 end
-dog 
+dog
 
 end
 
