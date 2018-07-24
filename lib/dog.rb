@@ -90,7 +90,7 @@ dog = DB[:conn].execute(sql,name,breed)
 
 if !dog
   create(name,breed)
-end 
+end
 dog 
 
 end
