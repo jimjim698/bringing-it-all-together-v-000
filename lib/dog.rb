@@ -91,7 +91,7 @@ end
       if dog.empty?
       create(name:name,breed:breed)
       else
-        dog_= new_from_db(dog[0]).save
+        dog_= new_from_db(dog[0])
         dog_.id = dog[0][0]
 
         end
