@@ -91,6 +91,7 @@ dog = DB[:conn].execute(sql,name,breed)
 if !dog
   create(name,breed)
 end 
+dog 
 
 end
 
