@@ -89,6 +89,7 @@ def self.find_or_create_by(name:,breed:)
 dog = DB[:conn].execute(sql,name,breed)
 
 if !dog
+  binding.pry
   create(name,breed)
 end
 dog 
