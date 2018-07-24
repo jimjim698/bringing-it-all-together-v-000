@@ -87,13 +87,13 @@ end
     SQL
 
       dog = DB[:conn].execute(sql,name,breed)
-      binding.pry
       if !dog
         create(name,breed)
       else
-        new_from_db(dog)
+        dog = new_from_db(dog)
 
         end
+        dog 
       end 
 
 end
